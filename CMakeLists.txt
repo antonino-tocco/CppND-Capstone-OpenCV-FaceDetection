@@ -7,4 +7,4 @@ set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
 
 project(HelloWorld)
 
-add_executable(HelloWorld src/main.cpp)
+add_executable(HelloWorld src/main.cpp src/face_detector.cpp src/face_detector.h)
