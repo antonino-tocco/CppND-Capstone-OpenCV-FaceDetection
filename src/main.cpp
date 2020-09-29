@@ -11,8 +11,12 @@ int main() {
         CustomVideoCapture videoCapture(faceCascadePath, eyeCascadePath);
         std::thread captureThread(&CustomVideoCapture::StartCapture, videoCapture);
         captureThread.join();
+        if( waitKey(10) == 27 )
+        {
+            captureThread.detach();
+        }
     } catch (const exception& ex) {
-
+        std::cout << "Exception " << ex.what() << std::endl;
     }
     return 0;
 }

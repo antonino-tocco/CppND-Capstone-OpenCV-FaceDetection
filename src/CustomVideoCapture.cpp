@@ -10,7 +10,12 @@ using namespace cv;
 
 
 CustomVideoCapture::CustomVideoCapture(const string& faceCascadePath, const string& eyesCascadePath):
-    _capture(new VideoCapture()), _faceDetector(new FaceDetector(faceCascadePath, eyesCascadePath)) {}
+    _capture(new VideoCapture()), _faceDetector(new FaceDetector(faceCascadePath, eyesCascadePath)) {};
+
+CustomVideoCapture::~CustomVideoCapture() {
+
+}
+
 
 void CustomVideoCapture::StartCapture() {
     if (_capture == nullptr) return;

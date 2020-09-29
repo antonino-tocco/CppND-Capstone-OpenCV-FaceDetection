@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="HelloWorld"/>
+		<Option title="FaceDetection"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;"/>
@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="HelloWorld">
-				<Option output="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/HelloWorld" prefix_auto="0" extension_auto="0"/>
+			<Target title="FaceDetection">
+				<Option output="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/FaceDetection" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -47,14 +47,14 @@
 					<Add directory="/usr/local/Cellar/opencv/4.4.0_2/include/opencv4"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 HelloWorld"/>
+					<Build command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 FaceDetection"/>
 					<CompileFile command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="HelloWorld/fast">
-				<Option output="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/HelloWorld" prefix_auto="0" extension_auto="0"/>
+			<Target title="FaceDetection/fast">
+				<Option output="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/FaceDetection" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -63,7 +63,7 @@
 					<Add directory="/usr/local/Cellar/opencv/4.4.0_2/include/opencv4"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 HelloWorld/fast"/>
+					<Build command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 FaceDetection/fast"/>
 					<CompileFile command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
@@ -71,19 +71,19 @@
 			</Target>
 		</Build>
 		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/src/CustomVideoCapture.cpp">
-			<Option target="HelloWorld"/>
+			<Option target="FaceDetection"/>
 		</Unit>
 		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/src/CustomVideoCapture.h">
-			<Option target="HelloWorld"/>
+			<Option target="FaceDetection"/>
 		</Unit>
 		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/src/FaceDetector.cpp">
-			<Option target="HelloWorld"/>
+			<Option target="FaceDetection"/>
 		</Unit>
 		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/src/FaceDetector.h">
-			<Option target="HelloWorld"/>
+			<Option target="FaceDetection"/>
 		</Unit>
 		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/src/main.cpp">
-			<Option target="HelloWorld"/>
+			<Option target="FaceDetection"/>
 		</Unit>
 		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
