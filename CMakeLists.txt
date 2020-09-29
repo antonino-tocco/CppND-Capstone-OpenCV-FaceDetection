@@ -7,4 +7,9 @@ set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
 
 project(HelloWorld)
 
-add_executable(HelloWorld src/main.cpp src/face_detector.cpp src/face_detector.h)
+find_package(OpenCV REQUIRED )
+include_directories(${OpenCV_INCLUDE_DIRS})
+
+add_executable(HelloWorld src/main.cpp src/FaceDetector.cpp src/FaceDetector.h src/CustomVideoCapture.cpp src/CustomVideoCapture.h)
+
+target_link_libraries(HelloWorld ${OpenCV_LIBS})

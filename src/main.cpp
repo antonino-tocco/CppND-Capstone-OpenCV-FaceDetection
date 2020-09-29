@@ -1,9 +1,19 @@
 #include <iostream>
+#include <thread>
+#include "CustomVideoCapture.h"
 
-#include "face_detector.h"
+using namespace std;
 
 int main() {
-    std::cout << "Hello World!" << "\n";
+    try {
+        string faceCascadePath = "./data/face_cascade.xml";
+        string eyeCascadePath = "./data/eye_cascade.xml";
+        CustomVideoCapture videoCapture(faceCascadePath, eyeCascadePath);
+        std::thread captureThread(&CustomVideoCapture::StartCapture, videoCapture);
+        captureThread.join();
+    } catch (const exception& ex) {
+
+    }
     return 0;
 }
 /*
