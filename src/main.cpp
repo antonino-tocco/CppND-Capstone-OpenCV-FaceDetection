@@ -5,16 +5,13 @@
 using namespace std;
 
 int main() {
+    std::cout << "START MAIN" << std::endl;
     try {
         string faceCascadePath = "./data/face_cascade.xml";
         string eyeCascadePath = "./data/eye_cascade.xml";
+        std::cout << "Face Cascade " << faceCascadePath << " Eyes Cascade " << eyeCascadePath << std::endl;
         CustomVideoCapture videoCapture(faceCascadePath, eyeCascadePath);
-        std::thread captureThread(&CustomVideoCapture::StartCapture, videoCapture);
-        captureThread.join();
-        if( waitKey(10) == 27 )
-        {
-            captureThread.detach();
-        }
+        videoCapture.StartCapture();
     } catch (const exception& ex) {
         std::cout << "Exception " << ex.what() << std::endl;
     }

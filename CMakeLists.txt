@@ -10,6 +10,9 @@ project(FaceDetection)
 find_package(OpenCV REQUIRED )
 include_directories(${OpenCV_INCLUDE_DIRS})
 
+find_package(Threads)
+
 add_executable(FaceDetection src/main.cpp src/FaceDetector.cpp src/FaceDetector.h src/CustomVideoCapture.cpp src/CustomVideoCapture.h)
 
 target_link_libraries(FaceDetection ${OpenCV_LIBS})
+target_link_libraries(FaceDetection ${CMAKE_THREAD_LIBS_INIT} )

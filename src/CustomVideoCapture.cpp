@@ -13,7 +13,8 @@ CustomVideoCapture::CustomVideoCapture(const string& faceCascadePath, const stri
     _capture(new VideoCapture()), _faceDetector(new FaceDetector(faceCascadePath, eyesCascadePath)) {};
 
 CustomVideoCapture::~CustomVideoCapture() {
-
+    delete _capture;
+    delete _faceDetector;
 }
 
 
@@ -22,16 +23,19 @@ void CustomVideoCapture::StartCapture() {
 
     try {
         _capture->open(CAMERA_ID);
-        if (!_capture->isOpened()) {
+        if (_capture->isOpened()) {
             Mat frame;
             while (_capture->read(frame)) {
                 if (frame.empty()) {
                     continue;
                 }
                 _faceDetector->DetectAndDisplay(frame);
+                if( waitKey(10) == 27 ) {
+                    break;
+                }
             }
         }
     } catch (const exception& ex) {
-
+        std::cout << "Exception on capture " << ex.what() << std::endl;
     }
 }

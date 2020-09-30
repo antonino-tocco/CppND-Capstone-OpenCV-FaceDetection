@@ -15,10 +15,10 @@ class FaceDetector {
     public:
         FaceDetector(const string& facesCascadePath, const string& eyesCascadePath);
         ~FaceDetector();
-        void DetectAndDisplay(Mat frame);
+        void DetectAndDisplay(const Mat& frame);
     private:
-        void DetectFaces(Mat frame, vector<Rect>& faces);
-        void DetectEyes(Mat frame, vector<Rect>& eyes);
+        void DetectFaces(const Mat& frame, vector<Rect>& faces);
+        void DetectEyes(const Mat& frame, vector<Rect>& eyes);
         CascadeClassifier* _facesCascade;
         CascadeClassifier* _eyesCascade;
 };

@@ -8,96 +8,112 @@
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection"/>
+				<Option working_dir="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection"/>
+				<Option working_dir="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection"/>
+				<Option working_dir="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="FaceDetection">
-				<Option output="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/FaceDetection" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection"/>
+				<Option output="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/FaceDetection" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/opencv/4.4.0_2/include/opencv4"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 FaceDetection"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 FaceDetection"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="FaceDetection/fast">
-				<Option output="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/FaceDetection" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection"/>
+				<Option output="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/FaceDetection" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/opencv/4.4.0_2/include/opencv4"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 FaceDetection/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 FaceDetection/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/src/CustomVideoCapture.cpp">
+		<Unit filename="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/src/CustomVideoCapture.cpp">
 			<Option target="FaceDetection"/>
 		</Unit>
-		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/src/CustomVideoCapture.h">
+		<Unit filename="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/src/CustomVideoCapture.h">
 			<Option target="FaceDetection"/>
 		</Unit>
-		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/src/FaceDetector.cpp">
+		<Unit filename="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/src/FaceDetector.cpp">
 			<Option target="FaceDetection"/>
 		</Unit>
-		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/src/FaceDetector.h">
+		<Unit filename="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/src/FaceDetector.h">
 			<Option target="FaceDetection"/>
 		</Unit>
-		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/src/main.cpp">
+		<Unit filename="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/src/main.cpp">
 			<Option target="FaceDetection"/>
 		</Unit>
-		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/CMakeLists.txt">
+		<Unit filename="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
+		<Unit filename="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
-		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
+		<Unit filename="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/../../../../../usr/local/lib/cmake/opencv4/OpenCVConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
-		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
+		<Unit filename="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
-		<Unit filename="/Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
+		<Unit filename="/home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/../../../../../usr/local/lib/cmake/opencv4/OpenCVModules.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\opencv4\"/>
 		</Unit>
 	</Project>

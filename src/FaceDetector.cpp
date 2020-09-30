@@ -15,7 +15,7 @@ FaceDetector::~FaceDetector() {
     delete _eyesCascade;
 }
 
-void FaceDetector::DetectAndDisplay(Mat frame) {
+void FaceDetector::DetectAndDisplay(const Mat& frame) {
     Mat frame_gray;
     cvtColor( frame, frame_gray, COLOR_BGR2GRAY );
     equalizeHist( frame_gray, frame_gray );
@@ -41,10 +41,10 @@ void FaceDetector::DetectAndDisplay(Mat frame) {
     imshow( "Capture - Face detection", frame );
 }
 
-void FaceDetector::DetectFaces(Mat frame, vector<Rect>& faces) {
+void FaceDetector::DetectFaces(const Mat& frame, vector<Rect>& faces) {
     _facesCascade->detectMultiScale( frame, faces);
 }
 
-void FaceDetector::DetectEyes(Mat frame, vector<Rect>& eyes) {
+void FaceDetector::DetectEyes(const Mat& frame, vector<Rect>& eyes) {
     _eyesCascade->detectMultiScale(frame, eyes);
 }
