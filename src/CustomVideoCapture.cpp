@@ -23,16 +23,17 @@ void CustomVideoCapture::StartCapture() {
 
     try {
         _capture->open(CAMERA_ID);
-        if (_capture->isOpened()) {
-            Mat frame;
-            while (_capture->read(frame)) {
-                if (frame.empty()) {
-                    continue;
-                }
-                _faceDetector->DetectAndDisplay(frame);
-                if( waitKey(10) == 27 ) {
-                    break;
-                }
+        if (!_capture->isOpened()) {
+            return;
+        }
+        Mat frame;
+        while (_capture->read(frame)) {
+            if (frame.empty()) {
+                break;
+            }
+            _faceDetector->DetectAndDisplay(frame);
+            if( waitKey(10) == 27 ) {
+                break;
             }
         }
     } catch (const exception& ex) {
