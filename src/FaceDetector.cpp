@@ -8,12 +8,8 @@
 using namespace std;
 
 FaceDetector::FaceDetector(const string& facesCascadePath, const string& eyesCascadePath):
-    _facesCascade(new CascadeClassifier(facesCascadePath)), _eyesCascade(new CascadeClassifier(eyesCascadePath)) {}
+    _facesCascade(std::make_unique<CascadeClassifier>(facesCascadePath)), _eyesCascade(std::make_unique<CascadeClassifier>(eyesCascadePath)) {}
 
-FaceDetector::~FaceDetector() {
-    delete _facesCascade;
-    delete _eyesCascade;
-}
 
 void FaceDetector::DetectAndDisplay(const Mat& frame) {
     Mat frame_gray;

@@ -14,11 +14,10 @@ using namespace cv;
 class CustomVideoCapture {
     public:
         CustomVideoCapture(const string& faceCascadePath, const string& eyesCascadePath);
-        ~CustomVideoCapture();
         void StartCapture();
     private:
-        VideoCapture* _capture;
-        FaceDetector* _faceDetector;
+        std::unique_ptr<VideoCapture> _capture;
+        std::unique_ptr<FaceDetector> _faceDetector;
 };
 
 

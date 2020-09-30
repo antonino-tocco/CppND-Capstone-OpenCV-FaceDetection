@@ -14,13 +14,12 @@ using namespace std;
 class FaceDetector {
     public:
         FaceDetector(const string& facesCascadePath, const string& eyesCascadePath);
-        ~FaceDetector();
         void DetectAndDisplay(const Mat& frame);
     private:
         void DetectFaces(const Mat& frame, vector<Rect>& faces);
         void DetectEyes(const Mat& frame, vector<Rect>& eyes);
-        CascadeClassifier* _facesCascade;
-        CascadeClassifier* _eyesCascade;
+        std::unique_ptr<CascadeClassifier> _facesCascade;
+        std::unique_ptr<CascadeClassifier> _eyesCascade;
 };
 
 

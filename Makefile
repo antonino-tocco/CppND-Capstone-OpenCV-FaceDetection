@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.16.5/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = /usr/local/Cellar/cmake/3.16.5/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection
+CMAKE_SOURCE_DIR = /Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection
+CMAKE_BINARY_DIR = /Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetect
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.16.5/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/usr/local/Cellar/cmake/3.16.5/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/CMakeFiles /home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/CMakeFiles /Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/antonino/Workspace/c++/CppND-Capstone-OpenCV-FaceDetection/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/antoninotocco/Workspace/C++/CppND-Capstone-OpenCV-FaceDetection/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,6 +122,33 @@ FaceDetection: cmake_check_build_system
 FaceDetection/fast:
 	$(MAKE) -f CMakeFiles/FaceDetection.dir/build.make CMakeFiles/FaceDetection.dir/build
 .PHONY : FaceDetection/fast
+
+src/Application.o: src/Application.cpp.o
+
+.PHONY : src/Application.o
+
+# target to build an object file
+src/Application.cpp.o:
+	$(MAKE) -f CMakeFiles/FaceDetection.dir/build.make CMakeFiles/FaceDetection.dir/src/Application.cpp.o
+.PHONY : src/Application.cpp.o
+
+src/Application.i: src/Application.cpp.i
+
+.PHONY : src/Application.i
+
+# target to preprocess a source file
+src/Application.cpp.i:
+	$(MAKE) -f CMakeFiles/FaceDetection.dir/build.make CMakeFiles/FaceDetection.dir/src/Application.cpp.i
+.PHONY : src/Application.cpp.i
+
+src/Application.s: src/Application.cpp.s
+
+.PHONY : src/Application.s
+
+# target to generate assembly for a file
+src/Application.cpp.s:
+	$(MAKE) -f CMakeFiles/FaceDetection.dir/build.make CMakeFiles/FaceDetection.dir/src/Application.cpp.s
+.PHONY : src/Application.cpp.s
 
 src/CustomVideoCapture.o: src/CustomVideoCapture.cpp.o
 
@@ -213,6 +240,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... FaceDetection"
+	@echo "... src/Application.o"
+	@echo "... src/Application.i"
+	@echo "... src/Application.s"
 	@echo "... src/CustomVideoCapture.o"
 	@echo "... src/CustomVideoCapture.i"
 	@echo "... src/CustomVideoCapture.s"
