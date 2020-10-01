@@ -41,3 +41,45 @@ The DetectAndDisplay method accept a Mat& reference as params and call private m
  
  
 No delete calls are needed in all the program because all member variables use smart pointers in form of unique_ptr.
+
+##Rubrics
+
+###Loops, Functions, I/O
+
+1. A variety of control structures are used in the project. The project code is clearly organized into functions.
+Use while loop in CustomVideoCapture on line 24.
+All the classes are structured with multiple methods.
+
+2. The project reads data from an external file or writes data to a file as part of the necessary operation of the program.
+The FaceDetector class read from face_cascade.xml and eye_cascade.xml on file FaceDetector.cpp, line 11.
+
+###Object Oriented Programming
+1. The project code is organized into classes with class attributes to hold the data, and class methods to perform tasks.
+All the project is ased on 3 classes, Application, CustomVideoCapture and FaceDetector.
+The structure of classes is in header files Application.h, CustomVideoCapture.h and FaceDetector.h.
+
+2. All class data members are explicitly specified as public, protected, or private.
+All class define access modifiers for class members such as private or public.
+The instance variables are private for don't break encapsulation.
+
+3. All class member functions document their effects, either through function names, comments, or formal documentation. Member functions do not change program state in undocumented ways.
+All the class member functions have function names that document the effect of using it.
+
+4. Inheritance hierarchies are logical. Composition is used instead of inheritance when appropriate. Abstract classes are composed of pure virtual functions. Override functions are specified.
+As you can view the program use composition for get the results.
+The Application class "use" the class member _capture (Application.h, line 16) of type CustomVideoCapture that "use" member variables _faceDetector (CustomVideoCapture.h, line 20).
+FaceDetector use two member variables of type CascadeClassifier (FaceDetector.h, line 21-22)
+
+###Memory Management
+1. At least two variables are defined as references, or two functions use pass-by-reference in the project code.
+The public method DetectAndDisplay (FaceDetector.h, line 17) from FaceDetector and the private methods DetectFaces and DetectEyes (FaceDetector.h, line 19-20) use pass by reference.
+
+2. The project uses at least one smart pointer: unique_ptr, shared_ptr, or weak_ptr. The project does not use raw pointers.
+Classes use a lot of smart pointer as member variables.
+It use unique_ptr for _capture member on Application class (Application.h, line 16), _capture and _faceDetector on CustomVideoCapture class (CustomVideoCapture.h, line 19-20), _faceCascade and _eyeCascade on FaceDetector class (FaceDetector.h, line 21-22)
+
+###Concurrency
+No need for multiple threads in this simple project.
+
+1. A mutex or lock (e.g. std::lock_guard or `std::unique_lock) is used to protect data that is shared across multiple threads in the project code.
+The application class use a std::lock_guard on Start method for avoid multiple capture start (Application.cpp, line 17).
